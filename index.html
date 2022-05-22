@@ -34,8 +34,8 @@
   <h3>General</h3>
   <table>
     <thead>
-      <th>Tag</th>
-      <th>Full Description</th>
+    <th>Tag</th>
+    <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
@@ -51,8 +51,8 @@
   <h3>Box Model</h3>
   <table>
     <thead>
-      <th>Tag</th>
-      <th>Full Description</th>
+    <th>Tag</th>
+    <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
@@ -108,8 +108,8 @@
   <h3>Display and Positioning</h3>
   <table>
     <thead>
-      <th>Tag</th>
-      <th>Full Description</th>
+    <th>Tag</th>
+    <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
@@ -126,19 +126,23 @@
       </tr>
       <tr>
         <td class="tag">display</td>
-        <td>...</td>
+        <td>An important property that can have complicated effects depending on the options selected. See MDN Web Docs page, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">here</a>. Basic keywords are covered in the <a href="#display-keywords">Keywords</a> section below.</td>
       </tr>
       <tr>
         <td class="tag">float</td>
-        <td>...</td>
+        <td>Places an element on the left or right side of the page, allowing text and inline elements to wrap around it.</td>
       </tr>
       <tr>
         <td class="tag">clear</td>
-        <td>...</td>
+        <td>Sets the wrapping behavior of an element relative to neighboring floating elements.</td>
       </tr>
     </tbody>
   </table>
   <h2>Keywords</h2>
+  <!--
+  <h3>General</h3>
+  <h3>Box Model</h3>
+  <h3 id="display-keywords">Display and Positioning</h3> -->
   <table>
     <thead>
       <th>Tag</th>
@@ -241,10 +245,68 @@
         <td class="tag">top: <span>inherit</span>;<br />right: <span>inherit</span>;<br />bottom: <span>inherit</span>;<br />left: <span>inherit</span>;</td>
         <td>Specifies that the value is the same as the computed value from the parent element.</td>
       </tr>
+      <tr>
+        <td class="tag">display: <span>block</span>;</td>
+        <td>Block-level elements take up the full width of their container, and can have their width and height adjusted.</td>
+      </tr>
+      <tr>
+        <td class="tag">display: <span>inline</span>;</td>
+        <td>Inline elements take up as little space as possible, flow horizontally, and cannot have their width or height adjusted.</td>
+      </tr>
+      <tr>
+        <td class="tag">display: <span>inline-block</span>;</td>
+        <td>Inline-block elements can appear next to each other, and can have their width and height adjusted.</td>
+      </tr>
+      <tr>
+        <td class="tag">float: <span>none</span>;</td>
+        <td>Sets the element to not float. Text and other inline elements will not flow around this element.</td>
+      </tr>
+      <tr>
+        <td class="tag">float: <span>left</span>;</td>
+        <td>Sets the element to float on the left side. Text and other inline elements will flow around this element.</td>
+      </tr>
+      <tr>
+        <td class="tag">float: <span>right</span>;</td>
+        <td>Sets the element to float on the right side. Text and other inline elements will flow around this element.</td>
+      </tr>
+      <tr>
+        <td class="tag">float: <span>inline-start</span>;</td>
+        <td>Sets the element to float on the <em>start side</em>, meaning the left side for left-to-right scripts. Text and other inline elements will flow around this element.</td>
+      </tr>
+      <tr>
+        <td class="tag">float: <span>inline-end</span>;</td>
+        <td>Sets the element to float on the <em>end side</em>, meaning the right side for left-to-right scripts. Text and other inline elements will flow around this element.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>none</span>;</td>
+        <td>Default value. The element will not be moved down to clear past floating elements.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>left</span>;</td>
+        <td>The element will be moved down to clear past left-floating elements.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>right</span>;</td>
+        <td>The element will be moved down to clear past right-floating elements.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>both</span>;</td>
+        <td>The element will be moved down to clear past floating elements on both sides.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>inline-start</span>;</td>
+        <td>The element will be moved down to clear past floating elements on the <em>start side</em>, meaning the left side for left-to-right scripts.</td>
+      </tr>
+      <tr>
+        <td class="tag">clear: <span>inline-end</span>;</td>
+        <td>The element will be moved down to clear past floating elements on the <em>end side</em>, meaning the right side for left-to-right scripts.</td>
+      </tr>
     </tbody>
   </table>
   <h2>Helpful Links</h2>
   <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs CSS Reference</a></li>
+    <li><a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path/tracks/fecp-22-fundamentals-of-css/modules/wdcp-22-learn-css-the-box-model/cheatsheet">Codecademy - Fundamentals of CSS - Learn CSS Cheatsheets</a></li>
     <li><a href="https://www.w3schools.com/CSSref/css_units.asp">CSS units reference (px, em, percentages)</a></li>
   </ul>
   <!-- End project content -->
