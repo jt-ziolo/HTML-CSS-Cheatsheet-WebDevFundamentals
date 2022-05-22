@@ -1,0 +1,4 @@
+Document at least one HTML or CSS topic
+Use HTML tables to display the documentation
+Utilize a custom color scheme
+Use custom styles to display example code such as HTML tags or CSS properties/values. Represent code using a monospace font family and a different background color
