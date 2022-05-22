@@ -1,0 +1,58 @@
+:root {
+  --primary-background-color: hsl(0, 30%, 95%);
+  --header-color-1: hsl(120, 60%, 85%);
+  --header-color-2: hsl(240, 60%, 85%);
+  --table-border-color-1: hsl(0, 80%, 65%);
+  --table-border-color-2: hsl(0, 80%, 85%);
+  --code-box-color: hsl(0, 0%, 30%);
+  --tag-color-1: hsl(120, 20%, 95%);
+  --tag-color-2: hsl(120, 60%, 85%);
+}
+
+
+body {
+  background-color: var(--primary-background-color);
+  text-align: center;
+}
+
+td  {
+  text-align: left;
+}
+
+h1 {
+  background-color: var(--header-color-1);
+}
+
+h2 {
+  background-color: var(--header-color-2);
+}
+
+h3 {
+    font-style: italic;
+}
+
+table {
+    margin: auto auto;
+    border: 1px solid;
+    border-color: var(--table-border-color-1);
+}
+
+td,
+th {
+    border: 2px solid;
+    border-color: var(--table-border-color-2);
+}
+
+th {
+    background-color: var(--table-border-color-1);
+}
+
+.tag {
+    color: var(--tag-color-1);
+    background-color: var(--code-box-color);
+}
+
+.tag span {
+    color: var(--tag-color-2);
+    font-weight: bold;
+}
