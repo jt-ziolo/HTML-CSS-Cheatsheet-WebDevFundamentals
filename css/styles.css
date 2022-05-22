@@ -1,12 +1,13 @@
 :root {
-  --primary-background-color: hsl(0, 30%, 95%);
+  --primary-background-color: hsl(0, 30%, 90%);
   --header-color-1: hsl(120, 60%, 85%);
   --header-color-2: hsl(240, 60%, 85%);
   --table-border-color-1: hsl(0, 80%, 65%);
   --table-border-color-2: hsl(0, 80%, 85%);
-  --code-box-color: hsl(0, 0%, 30%);
+  --code-box-color: hsl(0, 0%, 20%);
   --tag-color-1: hsl(120, 20%, 95%);
   --tag-color-2: hsl(120, 60%, 85%);
+  --tag-color-3: hsl(240, 80%, 75%);
 }
 
 
@@ -17,6 +18,7 @@ body {
 
 td  {
   text-align: left;
+  word-break: break-word;
 }
 
 h1 {
@@ -35,6 +37,7 @@ table {
     margin: auto auto;
     border: 1px solid;
     border-color: var(--table-border-color-1);
+    width: 1000px;
 }
 
 td,
@@ -50,9 +53,15 @@ th {
 .tag {
     color: var(--tag-color-1);
     background-color: var(--code-box-color);
+    width: 180px;
 }
 
 .tag span {
     color: var(--tag-color-2);
     font-weight: bold;
+}
+
+.tag span.auto {
+  color: var(--tag-color-3);
+  font-weight: bold;
 }

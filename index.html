@@ -35,18 +35,15 @@
   <table>
     <thead>
       <th>Tag</th>
-      <th>Name</th>
       <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
         <td class="tag">opacity</td>
-        <td>Opacity</td>
         <td>Controls opacity. Takes a float value, from 0 (transparent) to 1 (opaque).</td>
       </tr>
       <tr>
         <td class="tag">visibility</td>
-        <td>Visibility</td>
         <td>Controls whether an element is drawn without changing its influence on layout (with exceptions).</td>
       </tr>
     </tbody>
@@ -55,59 +52,56 @@
   <table>
     <thead>
       <th>Tag</th>
-      <th>Name</th>
       <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
         <td class="tag">margin</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Defines the spacing between this element and bordering elements, starting from the top going clockwise (space separated).</td>
       </tr>
       <tr>
         <td class="tag">padding</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Defines the spacing between this element and its own border, starting from the top going clockwise (space separated).</td>
       </tr>
       <tr>
         <td class="tag">overflow</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Controls behavior in both directions when an element's content is too big to fit in its block formatting context.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow-x</td>
+        <td>Controls behavior in the x direction when an element's content is too big to fit in its block formatting context.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow-y</td>
+        <td>Controls behavior in the y direction when an element's content is too big to fit in its block formatting context.</td>
       </tr>
       <tr>
         <td class="tag">width</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the width of the element, surrounded by the padding and margin areas.</td>
       </tr>
       <tr>
         <td class="tag">height</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the height of the element, surrounded by the padding and margin areas.</td>
       </tr>
       <tr>
         <td class="tag">min-width</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the lower limit of the used value of the width property.</td>
       </tr>
       <tr>
         <td class="tag">min-height</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the lower limit of the used value of the height property.</td>
       </tr>
       <tr>
         <td class="tag">max-width</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the upper limit of the used value of the width property.</td>
       </tr>
       <tr>
         <td class="tag">max-height</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the upper limit of the used value of the height property.</td>
       </tr>
       <tr>
         <td class="tag">box-sizing</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets whether borders and padding are taken into account when sizing the element.</td>
       </tr>
     </tbody>
   </table>
@@ -115,33 +109,31 @@
   <table>
     <thead>
       <th>Tag</th>
-      <th>Name</th>
       <th>Full Description</th>
     </thead>
     <tbody>
       <tr>
         <td class="tag">z-index</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets the z-order of the element and establishes a stacking context for its descendants. Overlapping elements with a larger z-index cover those with a smaller one.</td>
       </tr>
       <tr>
         <td class="tag">position</td>
-        <td>...</td>
-        <td>...</td>
+        <td>Sets how an element is positioned.</td>
+      </tr>
+      <tr>
+        <td class="tag">top<br />right<br />bottom<br />left</td>
+        <td>Sets the element's offset relative to the chosen side from either its normal position or its containing block, depending on <strong>position</strong>.</td>
       </tr>
       <tr>
         <td class="tag">display</td>
-        <td>...</td>
         <td>...</td>
       </tr>
       <tr>
         <td class="tag">float</td>
         <td>...</td>
-        <td>...</td>
       </tr>
       <tr>
         <td class="tag">clear</td>
-        <td>...</td>
         <td>...</td>
       </tr>
     </tbody>
@@ -163,11 +155,91 @@
       </tr>
       <tr>
         <td class="tag">visibility: <span>collapse</span>;</td>
-        <td>The element is made invisible, but is allowed to affect layout as normal <em>unless</em> <br />it is a table element or collapsed flex item or ruby annotation.</td>
+        <td>The element is made invisible, but is allowed to affect layout as normal <em>unless</em> it is a table element or collapsed flex item or ruby annotation.</td>
       </tr>
       <tr>
-        <td class="tag">margin: <span>auto</span>;</td>
+        <td class="tag">margin: <span class="auto">auto</span>;</td>
         <td>Allows the browser the freedom to select a suitable margin to use.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span>visible</span>;</td>
+        <td>Content is not clipped and will be rendered outside the padding box.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span>hidden</span>;</td>
+        <td>Content is clipped where necessary to fit inside the padding box, without automated scrolling.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span>clip</span>;</td>
+        <td>Content is clipped where necessary to fit inside the padding box, disallowing any scrolling.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span>scroll</span>;</td>
+        <td>Content is clipped where necessary to fit inside the padding box, while providing an option to scroll. The scrollbar is always visible.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span class="auto">auto</span>;</td>
+        <td>Content is clipped where necessary to fit inside the padding box, while (for most browsers) providing an option to scroll if needed. The scrollbar displaces content.</td>
+      </tr>
+      <tr>
+        <td class="tag">overflow: <span>overlay</span>;</td>
+        <td>Content is clipped where necessary to fit inside the padding box, while (for most browsers) providing an option to scroll if needed. The scrollbar covers up content.</td>
+      </tr>
+      <tr>
+        <td class="tag">width: <span class="auto">auto</span>;<br />height: <span class="auto">auto</span>;</td>
+        <td>The browser is allowed to calculate and select the value for the element. Also works with min- and max-width and height properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">width: <span>min-content</span>;<br />height: <span>min-content</span>;</td>
+        <td>The intrinsic minimum width. Also works with min- and max-width and height properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">width: <span>max-content</span>;<br />height: <span>max-content</span>;</td>
+        <td>The intrinsic preferred width. Also works with min- and max-width and height properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">width: <span>fit-content</span>(...);<br />height: <span>fit-content</span>(...);</td>
+        <td>Sets width to fit the value given, unless it exceeds the max-content value in which case it is set to the max-content value. Also works with min- and max-width and height properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">box-sizing: <span>content-box</span>;</td>
+        <td>The final width and height of the element is the sum of the set width and height and the thickness of borders and padding.</td>
+      </tr>
+      <tr>
+        <td class="tag">box-sizing: <span>border-box</span>;</td>
+        <td>The final width and height of the element is the set width and height. The content box shrinks to show borders and padding.</td>
+      </tr>
+      <tr>
+        <td class="tag">z-index: <span class="auto">auto</span>;</td>
+        <td>Default value. Sets the z-index of this element to 0 without establishing a stacking context for descendants.</td>
+      </tr>
+      <tr>
+        <td class="tag">position: <span>static</span>;</td>
+        <td>Default value. The element is positioned normally and the top, right, bottom, left and z-index properties <em>are ignored</em>.</td>
+      </tr>
+      <tr>
+        <td class="tag">position: <span>relative</span>;</td>
+        <td>The element is positioned normally, then offset relative to itself based on the top, right, bottom, left and z-index properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">position: <span>absolute</span>;</td>
+        <td>The element is removed from normal document flow and offset relative to its closest positioned ancestor based on the top, right, bottom, left and z-index properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">position: <span>fixed</span>;</td>
+        <td>The element is removed from normal document flow and offset relative to the initial containing block of the viewport, with exceptions if an ancestor has a transform, perspective or filter property set. In printed documents, the element is placed in the same position on every page.</td>
+      </tr>
+      <tr>
+        <td class="tag">position: <span>sticky</span>;</td>
+        <td>The element is positioned normally, then offset relative to its nearest ancestor with a scrolling mechanism (created by <strong>overflow</strong>) based on the top, right, bottom, left and z-index properties.</td>
+      </tr>
+      <tr>
+        <td class="tag">top: <span class="auto">auto</span>;<br />right: <span class="auto">auto</span>;<br />bottom: <span class="auto">auto</span>;<br />left: <span class="auto">auto</span>;</td>
+        <td>Specifies that the position of the element is based on the value of the opposite side's property (e.g. bottom is used if top is set to auto). If both sides are set to auto, then the element is not moved.</td>
+      </tr>
+      <tr>
+        <td class="tag">top: <span>inherit</span>;<br />right: <span>inherit</span>;<br />bottom: <span>inherit</span>;<br />left: <span>inherit</span>;</td>
+        <td>Specifies that the value is the same as the computed value from the parent element.</td>
       </tr>
     </tbody>
   </table>
