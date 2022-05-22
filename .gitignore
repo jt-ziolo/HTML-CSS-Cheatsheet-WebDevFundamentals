@@ -4,9 +4,4 @@
 node_modules
 dist
 .cache
-
-# Project-specific
-[Dd]ev/**
-
-# Visual Studio
-.vs/**
+dev/**
