@@ -55,7 +55,7 @@ table {
     margin: auto auto;
     border: 1px solid;
     border-color: var(--table-border-color-1);
-    width: 1000px;
+    width: 900px;
 }
 
 td,
